@@ -1,3 +1,6 @@
+
+// challenge 1
+
 function checkstatus(a, b, c) 
 {
   let name , age , status;
@@ -60,6 +63,9 @@ checkstatus(false,22,'samuel');
 
 
 
+
+// challenge 2
+
 function calculate(firstNum, secondNum, operation = "add") {
     if(secondNum === undefined){
       console.log(`Please Add A Second Number`);
@@ -88,3 +94,22 @@ function calculate(firstNum, secondNum, operation = "add") {
   
 
 
+
+
+
+// challenge 3
+
+function sayHello(name, gender) {
+  if(gender === 'Male' || gender === 'male'){
+    console.log(`Hello Mr ${name}`)
+  }else if(gender === 'Female' || gender === 'female'){
+    console.log(`Hello Miss ${name}`)
+  }else{
+    console.log(`Hello ${name}`)
+  }
+}
+
+// Needed Output
+sayHello("Osama", "Male"); // "Hello Mr Osama"
+sayHello("Eman", "Female"); // "Hello Miss Eman"
+sayHello("Sameh"); // "Hello Sameh"
