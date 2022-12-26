@@ -1,4 +1,4 @@
-function showData(a, b, c) 
+function checkstatus(a, b, c) 
 {
   let name , age , status;
   
@@ -54,10 +54,37 @@ function showData(a, b, c)
       console.log(`"Hello ${name}, Your Age Is ${age}, You Are Not Available For Hire"`);
     }
 }
-showData('samuel',22,true); 
-showData(22,'Samuel',true);
-showData(false,22,'samuel');
+checkstatus('samuel',22,true); 
+checkstatus(22,'Samuel',true);
+checkstatus(false,22,'samuel');
 
 
+
+function calculate(firstNum, secondNum, operation = "add") {
+    if(secondNum === undefined){
+      console.log(`Please Add A Second Number`);
+    }
+    else{
+      if(operation === "subtract"){
+        console.log(firstNum - secondNum);
+      }
+      else if(operation === "multiply"){
+        console.log(firstNum * secondNum);
+  
+      }
+      else{
+        console.log(firstNum + secondNum);
+  
+    }
+  }
+  }
+  
+  // Needed Output
+  calculate(20); // Second Number Not Found
+  calculate(20, 30); // 50
+  calculate(20, 30, 'add'); // 50
+  calculate(20, 30, 'subtract'); // -10
+  calculate(20, 30, 'multiply'); // 600
+  
 
 
