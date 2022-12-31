@@ -52,18 +52,37 @@ let num = numsAndStrings.filter(function(ele){
 // challenge 5
 
 
-let numbers = [2, 12, 11, 5, 10, 1, 99];
+// let numbers = [2, 12, 11, 5, 10, 1, 99];
 
-let sum = numbers.reduce(function(acc , curr){
-  if(curr % 2 === 0){
-    console.log('mul',acc*curr);
-    return acc * curr;
+// let sum = numbers.reduce(function(acc , curr){
+//   if(curr % 2 === 0){
+//     console.log('mul',acc*curr);
+//     return acc * curr;
 
-  }else{
-    console.log('sum',acc+curr);
-    return acc + curr;
-  }
-},1)
+//   }else{
+//     console.log('sum',acc+curr);
+//     return acc + curr;
+//   }
+// },1)
 
-console.log(sum);
+// console.log(sum);
 
+function find_max(...nums) {
+  
+   let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+  //  console.log(max_num);
+   for (let num of nums) {
+    // console.log(num)
+    if (num > max_num) {
+    // (Fill in the missing line here)
+     max_num =num
+  
+
+    }
+   }
+   return max_num;
+}
+
+
+
+console.log(find_max(1,2,3,4));
